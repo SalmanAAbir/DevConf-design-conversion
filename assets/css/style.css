@@ -508,3 +508,252 @@ body {
         align-items: flex-start;
     }
 }
+
+
+
+.talent-hub {
+    padding: 100px 20px;
+    background: #f6f7fa;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .talent-hub * {
+    box-sizing: border-box;
+  }
+  
+  .talent-hub__container {
+    width: 100%;
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+  
+  .talent-hub__header {
+    display: grid;
+    grid-template-columns: 1fr 0.75fr;
+    gap: 80px;
+    align-items: end;
+    margin-bottom: 55px;
+  }
+  
+  .talent-hub__label {
+    color: #2563eb;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+  }
+  
+  .talent-hub__heading h2 {
+    margin: 15px 0 0;
+    color: #0b1b2b;
+    font-size: 50px;
+    line-height: 1.08;
+    letter-spacing: -2px;
+  }
+  
+  .talent-hub__heading h2 span {
+    color: #2563eb;
+  }
+  
+  .talent-hub__intro {
+    margin: 0;
+    color: #6b7787;
+    font-size: 15px;
+    line-height: 1.7;
+  }
+  
+  .job-list {
+    border-top: 1px solid #dce2e8;
+  }
+  
+  .job-card {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr 50px;
+    gap: 30px;
+    align-items: center;
+    padding: 28px 20px;
+    background: #ffffff;
+    border-bottom: 1px solid #dce2e8;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .job-card:hover {
+    position: relative;
+    z-index: 2;
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(15, 30, 45, 0.08);
+  }
+  
+  .job-card__company {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .company-logo {
+    display: grid;
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    color: #ffffff;
+    background: #0b1b2b;
+    border-radius: 7px;
+    font-size: 18px;
+    font-weight: 700;
+    place-items: center;
+  }
+  
+  .job-card:nth-child(2) .company-logo {
+    background: #2563eb;
+  }
+  
+  .job-card:nth-child(3) .company-logo {
+    color: #2563eb;
+    background: #e8efff;
+  }
+  
+  .job-card__company span {
+    color: #0b1b2b;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+  }
+  
+  .job-card__company p {
+    margin: 5px 0 0;
+    color: #8a95a3;
+    font-size: 12px;
+  }
+  
+  .job-card__role h3 {
+    margin: 0 0 12px;
+    color: #0b1b2b;
+    font-size: 18px;
+  }
+  
+  .job-card__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+  }
+  
+  .job-card__tags span {
+    padding: 5px 9px;
+    color: #637083;
+    background: #f1f3f6;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: 600;
+  }
+  
+  .job-card__link {
+    display: grid;
+    width: 42px;
+    height: 42px;
+    color: #2563eb;
+    border: 1px solid #dce2e8;
+    border-radius: 50%;
+    font-size: 18px;
+    text-decoration: none;
+    place-items: center;
+    transition: 0.3s ease;
+  }
+  
+  .job-card__link:hover {
+    color: #ffffff;
+    background: #2563eb;
+    border-color: #2563eb;
+  }
+  
+  .talent-hub__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 35px;
+  }
+  
+  .talent-hub__count {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .talent-hub__count strong {
+    color: #2563eb;
+    font-size: 30px;
+  }
+  
+  .talent-hub__count span {
+    max-width: 150px;
+    color: #7b8796;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: 0.8px;
+  }
+  
+  .talent-hub__button {
+    display: inline-flex;
+    align-items: center;
+    gap: 30px;
+    padding: 15px 22px;
+    color: #ffffff;
+    background: #2563eb;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  
+  .talent-hub__button span {
+    font-size: 17px;
+  }
+  
+  @media (max-width: 768px) {
+    .talent-hub__header {
+      grid-template-columns: 1fr;
+      gap: 25px;
+    }
+  
+    .talent-hub__heading h2 {
+      font-size: 40px;
+    }
+  
+    .job-card {
+      grid-template-columns: 1fr 45px;
+    }
+  
+    .job-card__role {
+      grid-column: 1 / -1;
+    }
+  
+    .job-card__link {
+      grid-column: 2;
+      grid-row: 1;
+    }
+  }
+  
+  @media (max-width: 575px) {
+    .talent-hub {
+      padding: 70px 20px;
+    }
+  
+    .talent-hub__heading h2 {
+      font-size: 34px;
+      letter-spacing: -1px;
+    }
+  
+    .job-card {
+      padding: 24px 15px;
+    }
+  
+    .talent-hub__footer {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 25px;
+    }
+  
+    .talent-hub__button {
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
