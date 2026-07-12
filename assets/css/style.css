@@ -1,0 +1,98 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    color: #575757;
+
+}
+
+.header {
+    background: #fff;
+    color: #575757;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px 40px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo-full {
+    display: block;
+    height: 40px;
+    width: auto;
+}
+
+.logo-mini {
+    display: none;
+    height: 36px;
+    width: auto;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    list-style: none;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-list a:hover {
+    color: #1f2937;
+}
+
+.btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 22px;
+    background: #1D4ED8;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.btn-register {
+    border-radius: 10px;
+    height: 48px;
+}
+
+
+@media (max-width: 768px) {
+    .header-inner {
+        padding: 14px 20px;
+        gap: 16px;
+    }
+
+    .logo-full {
+        display: none;
+    }
+
+    .logo-mini {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+    }
+}
